@@ -33,7 +33,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -81,7 +81,11 @@
     @apply text-neutral-500 dark:text-neutral-400;
   }
 
-  .shadow-aceternity {
-    @apply shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)];
+  :root {
+    --shadow-input: 0px 2px 3px -1px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(25, 28, 33, 0.02), 0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+  }
+
+  .shadow-input {
+    box-shadow: var(--shadow-input);
   }
 }
