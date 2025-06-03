@@ -1,4 +1,5 @@
 import Container from "@/components/manual/Container";
+import Projects from "@/components/manual/Projects";
 import React from "react";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
           efficient systems, I'm currently working as a software engineer at
           Google.
         </p>
+        <Projects/>
       </Container>
     </div>
   );
